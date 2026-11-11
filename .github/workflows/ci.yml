@@ -12,6 +12,7 @@ jobs:
           python-version: '3.12'
           cache: pip
       - run: pip install -r requirements-dev.txt
+      - run: genvm-lint download --version v0.2.16
       - run: python -m pytest
       - run: genvm-lint check contracts/license_path.py
       - run: genvm-lint typecheck contracts/license_path.py

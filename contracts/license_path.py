@@ -152,7 +152,9 @@ grounded incompatibility with distribution conditions, not mere missing document
 unknown for ambiguous legal interpretation, unclear license identity, unsupported assumptions,
 contradictions, or insufficient evidence. A conflict needs a relevant distribution-document quote;
 a satisfied result needs relevant non-license, non-metadata document quotes.
-Every non-unknown row needs a 20..800 character exact license quote. Quotes alone are not proof:
+Every non-unknown row needs a 20..800 character exact license quote. Prefer copying a single
+document line with at least 20 characters. Preserve all whitespace and JSON-escape newlines;
+never reflow, trim or concatenate lines in quoted text. Quotes alone are not proof:
 explain their relevance and evaluate the whole evidence, including contradictory evidence.
 DATA: '''
 
@@ -279,7 +281,8 @@ class LicensePath(gl.Contract):
                         bounded = canonical(raw) if isinstance(raw, dict) else raw
                         review = normalize_review(parse(bounded, 20000), m, es, docs)
                         break
-                    except Exception:
+                    except Exception as error:
+                        print('LicensePath model validation failed:', str(error)[:160])
                         review = unknown_review(m)
             return {'base': base, 'issues': issues, 'review': review,
                     'outcome': aggregate(base, review)}

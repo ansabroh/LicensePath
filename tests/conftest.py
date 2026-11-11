@@ -12,7 +12,7 @@ def env():
     with vm.activate():
         owner = create_address('0x' + '11' * 20)
         vm.sender = owner
-        contract = deploy_contract(ROOT / 'contracts/license_path.py', vm)
+        contract = deploy_contract(ROOT / 'contracts/license_path.py', vm, sdk_version='v0.2.16')
         # Helpers belong to the same SDK-loaded contract module.
         import sys
         mod = next(v for k, v in sys.modules.items() if k.startswith('_contract_') and hasattr(v, 'manifest'))
