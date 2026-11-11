@@ -1,0 +1,1 @@
+LicensePath demo distribution statement: source distribution of licensepath-demo-lib 1.0.0 includes the complete upstream MIT license and copyright notice in the bundled attribution document. This is a synthetic licensing fixture, not a real external package audit.
