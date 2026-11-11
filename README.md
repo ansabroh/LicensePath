@@ -26,7 +26,7 @@ genvm-lint schema contracts/license_path.py --output /tmp/abi.json
 python scripts/prepare_demo.py
 ```
 
-36 direct-mode SDK tests cover all outcomes, owner isolation, malformed inputs and responses, citation grounding, byte/hash failures, immutable state, challenge bounds, stale receipts, independent-validator disagreement and receipt integrity. External web and LLM responses are mocked in those tests; they do not establish real-model legal accuracy or production consensus. See [DEPLOYMENT.md](DEPLOYMENT.md) for live validation status.
+37 direct-mode SDK tests cover all outcomes, owner isolation, malformed inputs and responses, citation grounding, byte/hash failures, immutable state, challenge bounds, stale receipts, independent-validator disagreement and receipt integrity. External web and LLM responses are mocked in those tests; they do not establish real-model legal accuracy or production consensus. See [DEPLOYMENT.md](DEPLOYMENT.md) for live validation status.
 
 ## Contract API
 

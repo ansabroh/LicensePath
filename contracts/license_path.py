@@ -145,7 +145,10 @@ Do not infer upstream authorship from a URL or hash. Unknown provenance or appli
 Return JSON only: {"dependencies":[{"id":"exact dependency id", "coverage":"complete|unknown",
 "status":"satisfied|remediable|conflict|unknown", "license_quote":"exact contiguous license quote",
 "document_quotes":[{"id":"evidence id", "quote":"exact contiguous quote"}], "reason":"short explanation"}]}.
-One row for each dependency in manifest order. complete means no omitted applicable obligation.
+One row for each dependency in manifest order. reason must be 1..1000 characters.
+Each document quote must be 20..4000 characters and exactly match its document.
+Prefer short single-line excerpts; do not quote an entire document longer than 4000 characters.
+complete means no omitted applicable obligation.
 satisfied means ALL applicable obligations evidenced for this scope. remediable means missing
 attribution, notice, source offer or other curable obligation. conflict means an explicit,
 grounded incompatibility with distribution conditions, not mere missing documentation.
@@ -169,7 +172,7 @@ def normalize_review(result, m, es, docs):
         require(row['id'] == d['id'], 'review identity/order')
         require(row['coverage'] in ['complete', 'unknown'], 'coverage')
         require(row['status'] in ['satisfied', 'remediable', 'conflict', 'unknown'], 'status')
-        text(row['reason'], 1000)
+        require(isinstance(row['reason'], str) and 1 <= len(row['reason']) <= 1000, 'reason length')
         q = row['license_quote']
         require(isinstance(q, str) and len(q) <= 800, 'license quote')
         licenses = [docs[e['id']] for e in es if e['dependency'] == d['id'] and e['role'] == 'license']
@@ -182,7 +185,7 @@ def normalize_review(result, m, es, docs):
             require(item['id'] in by_id, 'unknown citation')
             e = by_id[item['id']]
             require(e['dependency'] == d['id'] and e['role'] not in ['license', 'metadata'], 'citation scope')
-            text(item['quote'], 800)
+            require(isinstance(item['quote'], str) and 1 <= len(item['quote']) <= 4000, 'document quote length')
             require(len(item['quote']) >= 20 and item['quote'] in docs[item['id']], 'ungrounded document quote')
         if row['status'] in ['satisfied', 'conflict']:
             require(len(qs) > 0, 'document grounding required')

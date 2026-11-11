@@ -188,3 +188,11 @@ def test_prompt_injection_is_data_and_bad_response_fails_closed(env, bundle):
     vm.mock_llm('Assess open-source', '{"outcome":"COMPLIANT"}')
     cid = register(c, m, es)
     assert json.loads(c.assess(cid))['decision']['outcome'] == 'INCONCLUSIVE'
+
+
+def test_complete_attribution_quote_within_document_bound(env, bundle):
+    answer = review()
+    answer['dependencies'][0]['document_quotes'][0]['quote'] = bundle[2]['attribution']
+    _, receipt = assess(env, bundle, answer)
+    assert receipt['decision']['outcome'] == 'COMPLIANT'
+    assert validate(env[0])
