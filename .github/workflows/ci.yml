@@ -18,4 +18,5 @@ jobs:
       - run: genvm-lint typecheck contracts/license_path.py
       - run: genvm-lint schema contracts/license_path.py --output /tmp/abi.json
       - run: diff docs/abi.json /tmp/abi.json
+      - run: python scripts/verify_receipt.py docs/live-receipt.json fixtures/manifest.json
       - run: python scripts/prepare_demo.py && git diff --exit-code -- fixtures

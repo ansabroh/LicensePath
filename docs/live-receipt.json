@@ -1,0 +1,70 @@
+{
+  "advisory_only": true,
+  "case_id": "3e7403c49ba484d54ebed9db6cfba1e7f1d63d0f2df524193777cbbaaea3914f",
+  "decision": {
+    "base": "COMPLIANT",
+    "issues": [],
+    "outcome": "COMPLIANT",
+    "review": {
+      "dependencies": [
+        {
+          "coverage": "complete",
+          "document_quotes": [
+            {
+              "id": "attribution",
+              "quote": "MIT License\n\nCopyright (c) 2026 LicensePath Demo Authors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:"
+            },
+            {
+              "id": "notice",
+              "quote": "LicensePath demo distribution statement: source distribution of licensepath-demo-lib 1.0.0 includes the complete upstream MIT license and copyright notice in the bundled attribution document."
+            }
+          ],
+          "id": "licensepath-demo-lib",
+          "license_quote": "The above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.",
+          "reason": "The dependency is licensed under MIT. The primary obligation is to include the copyright notice and permission notice in all copies. The 'attribution' document contains the full text of the MIT license and the specific 2026 copyright notice. The 'notice' document confirms that the source distribution includes these required components. No conflicting conditions were found in the manifest or distribution metadata, and the provided evidence directly satisfies the attribution requirement for a source distribution.",
+          "status": "satisfied"
+        }
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "bytes": 50,
+      "dependency": "licensepath-demo-lib",
+      "id": "metadata",
+      "role": "metadata",
+      "sha256": "ce6cc713feabb4f4cad4c4f2edef2d44fc3bdfafe6c4608e8e00283e1a684e7e",
+      "url": "https://raw.githubusercontent.com/ansabroh/LicensePath/ca423e1d1986b595011f7a8957da0f9dc278d6d9/fixtures/demo-metadata.json"
+    },
+    {
+      "bytes": 1081,
+      "dependency": "licensepath-demo-lib",
+      "id": "license",
+      "role": "license",
+      "sha256": "3d49b546905d9cb87593a4524a088159147491df79f8c9f4cd0afec9496a3a99",
+      "url": "https://raw.githubusercontent.com/ansabroh/LicensePath/ca423e1d1986b595011f7a8957da0f9dc278d6d9/fixtures/demo-license.txt"
+    },
+    {
+      "bytes": 1081,
+      "dependency": "licensepath-demo-lib",
+      "id": "attribution",
+      "role": "attribution",
+      "sha256": "3d49b546905d9cb87593a4524a088159147491df79f8c9f4cd0afec9496a3a99",
+      "url": "https://raw.githubusercontent.com/ansabroh/LicensePath/ca423e1d1986b595011f7a8957da0f9dc278d6d9/fixtures/demo-attribution.txt"
+    },
+    {
+      "bytes": 266,
+      "dependency": "licensepath-demo-lib",
+      "id": "notice",
+      "role": "notice",
+      "sha256": "a96e74413cae496b4363f202c11410ffcff3948c5404ed52b78dcceba6ecd6af",
+      "url": "https://raw.githubusercontent.com/ansabroh/LicensePath/ca423e1d1986b595011f7a8957da0f9dc278d6d9/fixtures/demo-distribution.txt"
+    }
+  ],
+  "evidence_hash": "b1cdc8239899496ea29ab7b770de4a82a8af2d199bcf005bb44fcbb66fb519f9",
+  "manifest_hash": "76f34a12c2f0380a791e09caed82dd6a236c09e3b688bc0d8bef1f6e1afc3295",
+  "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+  "reason": "",
+  "receipt_hash": "9b0ac464a311f50c6d0a6a10bec539480dbade26a0709898baef1f7dd06a90d7",
+  "sequence": 1
+}

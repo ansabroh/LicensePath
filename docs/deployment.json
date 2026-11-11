@@ -1,12 +1,38 @@
 {
   "network": "studionet",
-  "address": "0x35408353C5f7b85F23653473AE578De5Debd8790",
+  "address": "0xed3f4a49f39CcB7b83E194907ab6CdF4460f81A2",
   "execution_mode": "Normal (Full Consensus)",
   "simulation": false,
-  "source_sha256": "916de45c6e0b670e2feba439324a703366bd1d0edab37205e4ddcdf9144da472",
-  "deployment_tx": "0x6f571506bd3ee5443da94ee1653ef8bf141ebf64e187ab3599037ba7eda963f4",
-  "registration_tx": "0x369742e0bd0c048f09ed81edd5e971a700c2a7ab4505236762ad4a15736453d8",
+  "source_sha256": "a6a6b281a2fa9f16ffaf59d1a24417ab4edeaf5c3e52b0338297748fd3ff546c",
+  "deployment_tx": "0x9e3b980003a001cd8ece1346d09013873c062851d4ed2bffb384a30312038dad",
   "case_id": "3e7403c49ba484d54ebed9db6cfba1e7f1d63d0f2df524193777cbbaaea3914f",
+  "development_instances": [
+    {
+      "address": "0x35408353C5f7b85F23653473AE578De5Debd8790",
+      "assessment_tx": "0x1d40e802297fe87bbb1cfac35c73bce7452ae9e9f4ee5ea4593ab32f94bb2593",
+      "outcome": "INCONCLUSIVE",
+      "status": "FINALIZED"
+    },
+    {
+      "address": "0x34a0A24B4777417339f6a1C6E4c584274C6C73f8",
+      "assessment_tx": "0xd95e45af26d6d9f8fd2181d21f3c804ee7d8f4946cfe4a6597f097541cd71c53",
+      "outcome": "INCONCLUSIVE",
+      "status": "FINALIZED"
+    }
+  ],
+  "registration_tx": "0xe527fc2aa92d5a4439352f31307360e7a0947797632df60ebb10dc91708a9235",
   "registration_status": "FINALIZED",
-  "registration_execution": "SUCCESS"
+  "registration_execution": "SUCCESS",
+  "automated_tests": 37,
+  "assessment_tx": "0x4c268d33dbee2435e1bad1fb7f483b00e85981c194b636401aa6dea124139c88",
+  "assessment_status": "FINALIZED",
+  "assessment_execution": "SUCCESS",
+  "outcome": "COMPLIANT",
+  "receipt_hash": "9b0ac464a311f50c6d0a6a10bec539480dbade26a0709898baef1f7dd06a90d7",
+  "ci_run": "https://github.com/ansabroh/LicensePath/actions/runs/42994580980",
+  "ci_result": "success",
+  "close_tx": "0xfea1ae0b3033735f44b8145f6d0d98ad26634291cf34054e507969d8d0cf9bfb",
+  "close_status": "FINALIZED",
+  "close_execution": "SUCCESS",
+  "case_closed": true
 }

@@ -13,6 +13,8 @@ A standalone GenLayer Intelligent Contract for evidence-backed open-source licen
 
 Unknown evidence takes precedence. A version mismatch means the supplied evidence does not establish this dependency, so it is INCONCLUSIVE rather than a licensing violation. Empty inventories are rejected. A result only covers the registered inventory; it cannot prove there are no undeclared dependencies.
 
+Live Studio deployment: [`0xed3f…81A2`](https://explorer-studio.genlayer.com/address/0xed3f4a49f39CcB7b83E194907ab6CdF4460f81A2). The synthetic demo assessment finalized successfully with **COMPLIANT** under full consensus. [Saved receipt](docs/live-receipt.json) and [deployment evidence](DEPLOYMENT.md).
+
 ## Quick start
 
 Requires Python 3.12+ and internet access for the pinned GenVM SDK download.
