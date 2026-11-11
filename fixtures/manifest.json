@@ -1,0 +1,23 @@
+{
+  "project": {
+    "repo": "ansabroh/LicensePath",
+    "commit": "ca423e1d1986b595011f7a8957da0f9dc278d6d9"
+  },
+  "distribution": "source",
+  "conditions": "Synthetic demo source distribution; includes full MIT copyright and permission notice. No additional restrictions or modifications.",
+  "dependencies": [
+    {
+      "id": "licensepath-demo-lib",
+      "version": "1.0.0",
+      "license": "MIT",
+      "source": {
+        "repo": "ansabroh/LicensePath",
+        "commit": "ca423e1d1986b595011f7a8957da0f9dc278d6d9"
+      },
+      "requirements": "Include the full MIT license, copyright, permission notice and disclaimer with copies or substantial portions.",
+      "mandatory": [
+        "attribution"
+      ]
+    }
+  ]
+}

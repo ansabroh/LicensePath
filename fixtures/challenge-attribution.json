@@ -1,0 +1,10 @@
+[
+  {
+    "id": "attribution",
+    "dependency": "licensepath-demo-lib",
+    "role": "attribution",
+    "url": "https://raw.githubusercontent.com/ansabroh/LicensePath/ca423e1d1986b595011f7a8957da0f9dc278d6d9/fixtures/demo-attribution.txt",
+    "sha256": "3d49b546905d9cb87593a4524a088159147491df79f8c9f4cd0afec9496a3a99",
+    "bytes": 1081
+  }
+]

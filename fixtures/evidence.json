@@ -1,0 +1,34 @@
+[
+  {
+    "id": "metadata",
+    "dependency": "licensepath-demo-lib",
+    "role": "metadata",
+    "url": "https://raw.githubusercontent.com/ansabroh/LicensePath/ca423e1d1986b595011f7a8957da0f9dc278d6d9/fixtures/demo-metadata.json",
+    "sha256": "ce6cc713feabb4f4cad4c4f2edef2d44fc3bdfafe6c4608e8e00283e1a684e7e",
+    "bytes": 50
+  },
+  {
+    "id": "license",
+    "dependency": "licensepath-demo-lib",
+    "role": "license",
+    "url": "https://raw.githubusercontent.com/ansabroh/LicensePath/ca423e1d1986b595011f7a8957da0f9dc278d6d9/fixtures/demo-license.txt",
+    "sha256": "3d49b546905d9cb87593a4524a088159147491df79f8c9f4cd0afec9496a3a99",
+    "bytes": 1081
+  },
+  {
+    "id": "attribution",
+    "dependency": "licensepath-demo-lib",
+    "role": "attribution",
+    "url": "https://raw.githubusercontent.com/ansabroh/LicensePath/ca423e1d1986b595011f7a8957da0f9dc278d6d9/fixtures/demo-attribution.txt",
+    "sha256": "3d49b546905d9cb87593a4524a088159147491df79f8c9f4cd0afec9496a3a99",
+    "bytes": 1081
+  },
+  {
+    "id": "notice",
+    "dependency": "licensepath-demo-lib",
+    "role": "notice",
+    "url": "https://raw.githubusercontent.com/ansabroh/LicensePath/ca423e1d1986b595011f7a8957da0f9dc278d6d9/fixtures/demo-distribution.txt",
+    "sha256": "a96e74413cae496b4363f202c11410ffcff3948c5404ed52b78dcceba6ecd6af",
+    "bytes": 266
+  }
+]

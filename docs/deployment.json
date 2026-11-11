@@ -1,0 +1,12 @@
+{
+  "network": "studionet",
+  "address": "0x35408353C5f7b85F23653473AE578De5Debd8790",
+  "execution_mode": "Normal (Full Consensus)",
+  "simulation": false,
+  "source_sha256": "916de45c6e0b670e2feba439324a703366bd1d0edab37205e4ddcdf9144da472",
+  "deployment_tx": "0x6f571506bd3ee5443da94ee1653ef8bf141ebf64e187ab3599037ba7eda963f4",
+  "registration_tx": "0x369742e0bd0c048f09ed81edd5e971a700c2a7ab4505236762ad4a15736453d8",
+  "case_id": "3e7403c49ba484d54ebed9db6cfba1e7f1d63d0f2df524193777cbbaaea3914f",
+  "registration_status": "FINALIZED",
+  "registration_execution": "SUCCESS"
+}

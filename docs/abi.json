@@ -1,0 +1,102 @@
+{
+  "ctor": {
+    "params": [],
+    "kwparams": {}
+  },
+  "methods": {
+    "assess": {
+      "params": [
+        [
+          "case_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "challenge": {
+      "params": [
+        [
+          "case_id",
+          "string"
+        ],
+        [
+          "expected_receipt",
+          "string"
+        ],
+        [
+          "reason",
+          "string"
+        ],
+        [
+          "additional_evidence_json",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "close": {
+      "params": [
+        [
+          "case_id",
+          "string"
+        ],
+        [
+          "expected_receipt",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "get_case": {
+      "params": [
+        [
+          "case_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "get_receipt": {
+      "params": [
+        [
+          "case_id",
+          "string"
+        ],
+        [
+          "sequence",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "register": {
+      "params": [
+        [
+          "manifest_json",
+          "string"
+        ],
+        [
+          "evidence_json",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    }
+  }
+}
